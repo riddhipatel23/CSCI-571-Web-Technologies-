@@ -44,10 +44,10 @@
         homesec.innterHTML = "";
         for(var c=0; c< Data.section4.length; c++){
             if (c%2 == 0){
-                homesec.innerHTML += '<div> <div style="margin-left:-80px;float:left; width: 492px;"> <img style="width:470px;" src= "./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div><div style="float:right; width: 60%; margin-right:80px"> <h3>'+Data.section4[c].heading+'</h3><p>'+Data.section4[c].text+'</p></div></div>'
+                homesec.innerHTML += '<div> <div  style="margin-left:-80px;float:left; width:300px;"> <img style="width:470px;" src= "./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div><div style="float:right; width: 60%; margin-right:130px"> <h3>'+Data.section4[c].heading+'</h3><p>'+Data.section4[c].text+'</p></div></div>'
             }
             else{
-                homesec.innerHTML += '<div> <div style="margin-left:80px; width: 700px; float:left"> <h3 style="text-align:right">'+Data.section4[c].heading+'</h3><p style="font-size:10;">'+Data.section4[c].text+'</p> </div><div style="float:right; width:492px;margin-top:-220px;margin-right:90px;"><img style="width: 492px;" src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div></div>'
+                homesec.innerHTML += '<div> <div style="margin-left:80px; width: 700px; float:left"> <h3 style="text-align:right">'+Data.section4[c].heading+'</h3><p style="font-size:10;">'+Data.section4[c].text+'</p> </div><divstyle="float:right; width:492px; margin-right:-80px"><img style="width: 492px;" src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div></div>'
             }
         }
     }
