@@ -6,6 +6,7 @@ body{
     margin: 0;
     width: 1440px;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .topnav{
@@ -45,7 +46,7 @@ body{
     overflow: hidden;
     background-color: #212529;
     height: 700px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .gmu .gmucards{
@@ -92,16 +93,22 @@ body{
     text-align: justify;
     display: table;
     padding: 150px 200px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.5;
+    font-size: 14.5px;
 }
 
 .lasky .column {
     float: left;
     width: 50%;
-    padding: 10px 10px;
+    padding: 10px;
     height: 350px;
     color: #ffffff;
 }
-
+.lasky .column p{
+    margin: 15px 0 15px 0;
+    position: relative;
+}
 .lasky .column img{
     overflow: hidden;
     top: 15px;
@@ -124,7 +131,7 @@ body{
 
 .home4 img{
     height: 200px;
-    width:300px;
+    width:470px;
 }
 
 
