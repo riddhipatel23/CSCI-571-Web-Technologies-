@@ -127,11 +127,13 @@ body{
     color: #ffffff;
     text-align: justify;
     line-height:1.5;
+    margin-bottom: -5px !important;
 }
 
 .home4 img{
     height: 200px;
-    width:470px;
+    width:300px;
+    
 }
 
 
