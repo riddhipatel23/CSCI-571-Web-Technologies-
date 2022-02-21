@@ -27,7 +27,7 @@ body{
 .la{
     background-image: url("../assets/rodeo-drive.jpg");
     height: 339px;
-    background-size: 1425px;
+    background-size: 100%;
     background-position: 40% 85%;
     overflow: hidden;
 }
