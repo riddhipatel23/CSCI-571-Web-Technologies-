@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #12141c;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.topnav a{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    padding: 50px;
+    font-size: 25px;
+    color:#ffffff;
+    text-shadow: 1px 1px #ef771f;
+    text-decoration: none;
+}
+.notfound{
+    background-image: url("../assets/404-featured.jpg");
+    height: 339px;
+    background-size: 1425px;
+    background-position: 40% 85%;
+    overflow: hidden;
+}
+.notfound h3{
+    position: relative;
+    margin-top: auto;
+    top: 43%;
+    left: 35.8%;
+    font-size: 40px;
+    color: #f47920;
+    text-shadow: 1px 1px #fafafa;
+}
+.footer{
+    background-color: #12141c;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.footer .column{
+    float: left;
+    color: #ffffff;
+    width: 50%;
+}
