@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    width:1440px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,16 +18,24 @@ body{
     width: 60%;
     padding: 50px;
     font-size: 25px;
-    color:#ffffff;
-    text-shadow: 1px 1px #ef771f;
+    color:#ef771f;
+    text-shadow: 1px 1px #ffffff;
     text-decoration: none;
+}
+.errtxt{
+    background-color: rgba(33,37,41,255);
+    align-content: center;
+    padding:120px;
+    text-align: center;
+    color:#ffffff;
 }
 .notfound{
     background-image: url("../assets/404-featured.jpg");
     height: 339px;
-    background-size: 1425px;
-    background-position: 40% 85%;
+    background-size: 100%;
+    background-position: 100%;
     overflow: hidden;
+    box-shadow: 0 3000px rgb(178,65,0,0.4) inset;
 }
 .notfound h3{
     position: relative;
@@ -34,8 +43,8 @@ body{
     top: 43%;
     left: 35.8%;
     font-size: 40px;
-    color: #f47920;
-    text-shadow: 1px 1px #fafafa;
+
+  
 }
 .footer{
     background-color: #12141c;

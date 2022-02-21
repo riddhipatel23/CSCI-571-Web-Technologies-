@@ -112,12 +112,14 @@ body{
 
 .home4{
     background-color: #212529;
+    display: inline-block;
     font-size: 14px;
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 90px 150px;
     overflow: hidden;
     color: #ffffff;
     text-align: justify;
+    line-height:1.5;
 }
 
 .home4 img{
