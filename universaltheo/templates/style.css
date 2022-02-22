@@ -25,6 +25,16 @@ body{
     text-decoration: none;
 }
 
+.topnav a:hover{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    font-size: 25px;
+    color:#ef771f;
+    text-shadow: 1px 1px #ffffff;
+    text-decoration: none;
+}
+
 .la{
     background-image: url("../assets/rodeo-drive.jpg");
     height: 339px;
@@ -122,7 +132,7 @@ body{
     background-color: #212529;
     display: inline-block;
     font-size: 14px;
-    padding: 90px 150px;
+    padding: 150px 200px;
     overflow: hidden;
     color: #ffffff;
     text-align: justify;
@@ -132,23 +142,10 @@ body{
 
 .home4 img{
     height: 200px;
-    width:300px;
+    width:290px;
     
 }
 
-
-.footer{
-    background-color: #12141c;
-    text-align: center;
-    display: table;
-    width: 100%;
-}
-
-.footer .column{
-    float: left;
-    color: #ffffff;
-    width: 50%;
-}
 .left{
     display:grid;
     grid-template-columns: 30% 70%;
@@ -157,6 +154,25 @@ body{
 .right{
     display:grid;
     grid-template-columns: 70% 30%;
+}
 
+.footer{
+    background-color: #12141c;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height:200px;
+}
 
+.footer .column{
+    float: left;
+    color: #ffffff;
+    width: 50%;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
