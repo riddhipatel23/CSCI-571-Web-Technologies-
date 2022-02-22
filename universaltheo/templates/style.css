@@ -17,7 +17,7 @@ body{
 
 .topnav a{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', cursive;
     padding: 50px;
     font-size: 25px;
     color:#ffffff;
@@ -41,12 +41,13 @@ body{
     font-size: 40px;
     color:#f47920;
     text-shadow: 1px 1px #fafafa;
+    font-family: 'Montserrat', sans-serif;
 }
 .gmu{
     overflow: hidden;
     background-color: #212529;
     height: 700px;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .gmu .gmucards{
@@ -121,8 +122,6 @@ body{
     background-color: #212529;
     display: inline-block;
     font-size: 14px;
-    
-   
     padding: 90px 150px;
     overflow: hidden;
     color: #ffffff;
