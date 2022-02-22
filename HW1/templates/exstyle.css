@@ -2,6 +2,8 @@ body{
     margin: 0;
     width:1440px;
     font-family: 'Montserrat', sans-serif;
+    
+
 }
 
 .topnav{
@@ -12,8 +14,9 @@ body{
 }
 
 .topnav a{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 60%;
     padding: 50px;
     font-size: 25px;
@@ -27,8 +30,6 @@ body{
     padding:120px;
     text-align: center;
     color:#ffffff;
-    line-height: 1.2;
-    font-size:24px;
 }
 .notfound{
     background-image: url("../assets/404-featured.jpg");
@@ -36,14 +37,14 @@ body{
     background-size: 100%;
     background-position: 100%;
     overflow: hidden;
-    box-shadow: 0 3000px rgb(135,55,0,0.6) inset;
+    box-shadow: 0 3000px rgb(178,65,0,0.4) inset;
 }
 .notfound h3{
     position: relative;
     margin-top: auto;
     top: 43%;
-    left: 39.5%;
-    font-size: 36px;
+    left: 35.8%;
+    font-size: 40px;
 
   
 }
@@ -52,6 +53,7 @@ body{
     text-align: center;
     display: table;
     width: 100%;
+
 }
 
 .footer .column{

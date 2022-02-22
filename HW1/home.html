@@ -6,73 +6,28 @@
     <link rel="stylesheet" href="./templates/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" >
 </head>
-
-<!-- render-json  -->
-<script type="text/javascript" charset="utf-8">
-    fetch("data.json")
-            .then(function (response) {
-                return response.json();
-            }).then(function(apiJsonData){
-                renderDataInTheCard(apiJsonData);
-            })
-
-    function renderDataInTheCard(Data){
-        // section-2 
-        const card = document.getElementById("gmucards");
-        card.innerHTML = "";
-        console.log(Data.section2)
-        for(var c=0; c< Data.section2.length; c++){
-            card.innerHTML += '<div class="card"> <img src="./assets/'+Data.section2[c].image+'"alt="'+Data.section2[c].heading+'"> <h3>'+Data.section2[c].heading+'</h3><p>'+Data.section2[c].text+'</p></div>'
-        }
-        // section-4
-        // const homesec = document.getElementById("home4");
-        // homesec.innerHTML = "";
-        // for(var c=0; c< Data.section4.length; c++){
-        //     if (c%2 == 0){
-        //         homesec.innerHTML += '<div> <div style="float:left; width: 30%;"> <img src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div><div style="float:right; width: 70%;"> <h3>'+Data.section4[c].heading+'</h3><p>'+Data.section4[c].text+'</p></div></div>'
-        //     }
-        //     else{
-        //         homesec.innerHTML += '<div><div style="float:left; width: 70%;"> <h3>'+Data.section4[c].heading+'</h3><p>'+Data.section4[c].text+'</p></div> <div style="float:right; width: 20%;"> <img src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div></div>'
-        //     }
-        // }
-        const homesec = document.getElementById("home4");
-        homesec.innterHTML = "";
-        for(var c=0; c< Data.section4.length; c++){
-            if (c%2 == 0){
-                homesec.innerHTML += '<div> <div  style="float:left; width:300px;"> <img src= "./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div><div style="float:right; width: 60%; margin-right:130px"> <h3>'+Data.section4[c].heading+'</h3><p>'+Data.section4[c].text+'</p></div></div>'
-            }
-            else{
-                homesec.innerHTML += '<div> <div style="width: 700px; float:left"> <h3 style="text-align:right">'+Data.section4[c].heading+'</h3><p style="font-size:10;">'+Data.section4[c].text+'</p> </div><div style="float:right; width:492px; margin-right:20px"><img src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div></div>'
-            }
-        }
-    }
-</script>
 
 
 <body>
-    <!-- navigation bar -->
+    
     <div class="topnav">
             <a href="home.html"> Home </a>
             <a href="explore.html"> Explore </a>
             <a href="contact.html"> Contact </a>
     </div>
 
-    <!-- banner image -->
     <div class="la">
         <h3>LA - The City of Angels</h3>
     </div>
-
-    <!-- section 2 cards -->
     <div class="gmu">
         <div id="gmucards" class="gmucards"></div>
     </div>
 
-    <!-- LA skyline  -->
     <div class="lasky">
         <div class="column">
             <p>Los Angeles is the City of Dreams and is the heart of southern California. It is a vast and varied geographic entity. The city is famous for being the home of the rich and famous, Hollywood, the main home of major entertainment companies, ethically diverse, and the second-largest city in America.</p>
@@ -83,22 +38,51 @@
         </div>
     </div>
 
-    <!-- section 4  -->
     <div id="home4" class="home4">
 
     </div>
 
-    <!-- footer -->
     <div class="footer">
         <div class="column">
             <p style="padding: 30px; position: relative;padding-left: 180px;"><br>Tip the world over on its side and everything loose will land <br>in Los Angeles <br><br><br>-Frank Lloyd Wright</p>
         </div>
         <div class="column">
-            <p style="font-size: large;top: 10px;position: relative;">Designed by<br><br></p>
-            <p style="font-size: smaller;"> Riddhi Patel <br><br></p>
-            <p style="font-size:smaller;"><a href="mailto:riddhiha@usc.edu" style="color: white;">riddhiha@usc.edu</a></p>
-            <p style="font-size: smaller;"><a href="tel:5551234567"  style="color: white;">(+1) 737 274 2145</a></p>
+            <p style="font-size: large;top: 10px;position: relative;font-family:\'Montserrat\', sans-serif;">Designed by<br><br></p>
+            <p style="font-size: smaller;font-family:\'Montserrat\', sans-serif;"> Riddhi Patel <br><br></p>
+            <p style="font-size: smaller;">riddhiha@usc.edu</p>
+            <p style="font-size: smaller;">(+1) 737 274 2145</p>
         </div>
     </div>
 </body>
+<script type="text/javascript" charset="utf-8">
+    fetch("data.json")
+            .then(function (response) {
+                return response.json();
+            }).then(function(apiJsonData){
+                renderDataInTheCard(apiJsonData);
+            }).catch((error)=>{
+              
+                //error handling
+            })
+
+    function renderDataInTheCard(Data){
+        const card = document.getElementById("gmucards");
+        card.innerHTML = "";
+        console.log(Data.section2)
+        for(var c=0; c< Data.section2.length; c++){
+            card.innerHTML += '<div class="card"> <img src="./assets/'+Data.section2[c].image+'"alt="'+Data.section2[c].heading+'"> <h3>'+Data.section2[c].heading+'</h3><p>'+Data.section2[c].text+'</p></div>'
+        }
+
+        const homesec = document.getElementById("home4");
+        homesec.innerHTML = "";
+        for(var c=0; c< Data.section4.length; c++){
+            if (c%2 == 0){
+                homesec.innerHTML += '<div class="left"> <div > <img src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div><div> <h2 style="font-family:\'Montserrat\', sans-serif;">'+Data.section4[c].heading+'</h2><p style="font-family: \'Comfortaa\', cursive;">'+Data.section4[c].text+'</p></div></div>'
+            }
+            else{
+                homesec.innerHTML += '<div class="right"><div  > <h2 style="text-align:right;font-family:\'Montserrat\', sans-serif;">'+Data.section4[c].heading+'</h2><p style="font-family: \'Comfortaa\', cursive;">'+Data.section4[c].text+'</p></div> <div > <img style="margin-left:20px" src="./assets/'+Data.section4[c].image+'"alt="'+Data.section2[c].heading+'"></div></div>'
+            }
+        }
+    }
+</script>
 </html>

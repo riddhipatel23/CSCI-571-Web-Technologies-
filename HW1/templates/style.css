@@ -121,7 +121,8 @@ body{
     background-color: #212529;
     display: inline-block;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    
+   
     padding: 90px 150px;
     overflow: hidden;
     color: #ffffff;
@@ -148,4 +149,15 @@ body{
     float: left;
     color: #ffffff;
     width: 50%;
+}
+.left{
+    display:grid;
+    grid-template-columns: 30% 70%;
+
+}
+.right{
+    display:grid;
+    grid-template-columns: 70% 30%;
+
+
 }
