@@ -29,9 +29,7 @@
     </div>
 
     <div class="lasky">
-        <div class="column">
-            <p>Los Angeles is the City of Dreams and is the heart of southern California. It is a vast and varied geographic entity. The city is famous for being the home of the rich and famous, Hollywood, the main home of major entertainment companies, ethically diverse, and the second-largest city in America.</p>
-            <p>The residents of Los Angeles are called Angelenos. Their lifestyle relies on the automobile, idealizes the single-family dwelling, and favours informity. With notable exceptions, the skyline is primarily horizontal rather than vertical. Los Angeles is a place of extraordinary ethnic and racial diversity, owing largely to immigration, and, like other world cities, it reflects a growing gap between rich and poor.</p> 
+        <div id ="laskytext" class="column">
         </div>
         <div class="column">
             <img src="./assets/lasky.png" alt="LAsky" >
@@ -69,10 +67,16 @@
     function renderDataInTheCard(Data){
         const card = document.getElementById("gmucards");
         card.innerHTML = "";
-        console.log(Data.section2)
         for(var c=0; c< Data.section2.length; c++){
             card.innerHTML += '<div class="card"> <img src="./assets/'+Data.section2[c].image+'"alt="'+Data.section2[c].heading+'"> <h3>'+Data.section2[c].heading+'</h3><p>'+Data.section2[c].text+'</p></div>'
         }
+
+        const latext = document.getElementById("laskytext");
+        latext.innerHTML = "";
+        const splitdata1 = Data.section3.text[0]
+        const splitdata2 = Data.section3.text[1]
+        latext.innerHTML += '<p>'+ splitdata1 +' </p><p>' + splitdata2 + '</p>'
+        //latext.innerHTML += '<p>'+Data.section3.text + '</p>'ujjj
 
         const homesec = document.getElementById("home4");
         homesec.innerHTML = "";
