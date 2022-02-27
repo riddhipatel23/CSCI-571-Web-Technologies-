@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="image">
+            <img src="./static/logo.jpg">
+        </div>
+        <div class="buttons1">
+            <div class="column1">
+                <a href="./home.html">  
+                    <button>Home</button>  
+                </a>
+            </div>
+            <div class="column1">
+                <a href="./summary.html">  
+                    <button>Overview</button>  
+                </a>
+            </div>
+            <div class="column1">
+                <a href="./summary.html">  
+                    <button>Watch Demo</button>  
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1> Let's Unbiasify your data! </h1>
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <div class="modelselect">
+            <form action="{{ url_for('predict')}}"method="post" style="padding-left: 650px !important;">
+                <select id="category" name="model">
+                    <option value="" disabled selected>Select Model</option>
+                    <option value="0">Bias</option>
+                    <option value="2">Unbias</option>
+                </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h4> Enter the following values </h4>
+        </div>
+        <div style="padding-left: 475px !important;">
+            <form action="{{ url_for('predict')}}"method="post">
+                <input type="text" name="age" placeholder="Age" required="required" />
+                <select id="category" name="occupation">
+                    <option value="" disabled selected>Select Occupation</option>
+                    <option value="13">Tech Engineer</option>
+                    <option value="12">Sales</option>
+                    <option value="11">Protective Serv</option>
+                    <option value="1">Armed-Forces</option>
+                    <option value="2">Craft-repair</option>
+                    <option value="0">Adm-clerical</option> 
+                    <option value="3">Exec-managerial</option>
+                    <option value="4">Farming-fishing</option>
+                    <option value="5">Handlers-cleaners</option>
+                    <option value="7">Miscellaneous</option>
+                    <option value="8">Other-service</option>
+                    <option value="9">Priv-house-serv</option>
+                    <option value="10">Prof-specialty</option>
+                    <option value="6">Machine-op-inspct</option>
+                </select>
+                <select id="category" name="gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+
+                <button type="submit" class="btn">Predict</button> 
+        </div>
+        <br>
+        <div class="result">
+            <p> Income : {{income}} </p>
+        </div>
+    </div>
+
+</body>
+</html>

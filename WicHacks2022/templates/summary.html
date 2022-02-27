@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="image">
+            <img src="./static/logo.jpg">
+        </div>
+        <div class="buttons1">
+            <div class="column1">
+                <a href="./home.html">  
+                    <button>Home</button>  
+                </a>
+            </div>
+            <div class="column1">
+                <a href="./summary.html">  
+                    <button>Watch Demo</button>  
+                </a>
+            </div>
+            <div class="column1">
+                <a href="./prediction_page.html">  
+                    <button>Test Data</button>  
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="graphs">
+        <div class="dataset">
+            <img src="./static/dataset_overview.jpeg">
+        </div>
+        <div class="compare">
+            <img src="./static/compare_models.jpeg">
+        </div>
+    </div>
+    <div class="explain">
+        <div class="dataset_explain">
+            <p> <u><b>Gender ratio in the dataset</u></b><br>
+                The very famous "Adult Income Dataset" is used here to debias gender biases. This dataset named “adult” is found in the UCI machine learning repository.
+                It consists of 16 columns of which the targetted column is Income which is divded into 2 catagories ">50K" and "<=50K". Other attributes
+                are demographics and features that describe a person such as age, gender, occupation, race, relationship..etc. 
+            </p>
+        </div>
+        <div class="compare_explain">
+            <p> <u><b>Classification models accuracy comparision</u></b><br>
+                The above graph depicts the comparision of accuracy's of different Classification model trained on the dataset. 
+                It also shows comparison of a particular model accuracy on biased and unbiased data. We can see that the Random Forest algorithm gives the best accuracy.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
