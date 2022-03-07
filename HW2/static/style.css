@@ -1,0 +1,41 @@
+html{
+    margin:0;
+    overflow:hidden;
+    width: 1440px;
+}
+
+body{
+    margin: 0;
+    overflow:hidden;
+}
+
+.head{
+    margin-top: 150px;
+}
+h1{
+    text-align: center;
+    color: #80070b;
+}
+
+h4{
+    text-align: center;
+    color: #80070b;
+}
+
+.form{
+    position: relative;
+    padding-top: 25px;
+
+}
+form{
+    text-align: center;
+}
+
+button{
+    background-color:#4a6aa1;
+    color: #ffffff;
+    align: center;
+    border: none;
+    padding: 8px;
+    font-size: 12px;
+}
