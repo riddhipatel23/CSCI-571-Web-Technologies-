@@ -30,7 +30,12 @@ h4{
 form{
     text-align: center;
 }
-
+form input:focus{
+    border-color: gray;
+    outline: none;
+    box-shadow: none;
+    outline-width: 0px;
+}
 button{
     background-color:#4a6aa1;
     color: #ffffff;
