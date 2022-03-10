@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
 </head>
+<!-- <script>
+    const validage = document.getElementById("age");
+
+    validage.addEventListener("input", function (event) {
+    if (number.validity.typeMismatch) {
+        validage.setCustomValidity("Please enter a number.");
+        validage.reportValidity();
+    } else {
+        validage.setCustomValidity("");
+    }
+    });
+</script> -->
 <body>
     <div class="head">
         <h1><b> Blood Pressure Predictor </b></h1>
@@ -25,8 +37,39 @@
             <br>
             <br>
             <br>
-            <button type="button"> Calculate </button>
+            <button type="submit"> Calculate </button>
         </form>
     </div>
+    <br>
+    <br>
+    <div class="result">
+        <p><b> {{result}} <b></p>
+    </div>
+    <script>
+        const ageinput = document.querySelector('input[name="Age"]');
+    
+        ageinput.addEventListener('invalid', function (event) {
+          if (event.target.validity.valueMissing) {
+            event.target.setCustomValidity('Please enter a number.');
+          }
+        })
+    
+        ageinput.addEventListener('change', function (event) {
+          event.target.setCustomValidity('');
+        })
+
+        const weightinput = document.querySelector('input[name="weight"]');
+    
+        weightinput.addEventListener('invalid', function (event) {
+          if (event.target.validity.valueMissing) {
+            event.target.setCustomValidity('Please enter a number.');
+          }
+        })
+    
+        weightinput.addEventListener('change', function (event) {
+          event.target.setCustomValidity('');
+        })
+      </script>
 </body>
+
 </html>
