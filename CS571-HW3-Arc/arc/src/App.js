@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react';
 import * as ReactDOM from 'react-dom';
-import { Scene,WebMap,WebScene } from '@esri/react-arcgis';
-
+import { Scene,WebMap,WebScene, Map } from '@esri/react-arcgis';
+import Campus from './Campus';
 
 function App(){
   useEffect(() => {
@@ -15,4 +15,24 @@ function App(){
 );
 }
 
-export default App;
+//export default App;
+
+export default (props) => (
+  useEffect(() => {
+    document.title = "React App - Riddhi Patel"
+  }, []),
+  <Map style={{ width: '70vw', height: '90vh' }}
+      //mapProperties={{ basemap: 'satellite' }}
+      viewProperties={{
+          center: [-118.28538,34.0205],
+          zoom: 15
+      }}>
+      <Campus />
+  </Map>
+)
+
+// export default (props) => (
+//   <Scene class="full-screen-map">
+//       <Campus />
+//   </Scene>
+// )
