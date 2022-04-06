@@ -21,14 +21,14 @@ export default (props) => (
   useEffect(() => {
     document.title = "React App - Riddhi Patel"
   }, []),
-  <Map style={{ width: '70vw', height: '90vh' }}
+  <Scene style={{ width: '70vw', height: '90vh' }}
       //mapProperties={{ basemap: 'satellite' }}
       viewProperties={{
           center: [-118.28538,34.0205],
           zoom: 15
       }}>
       <Campus />
-  </Map>
+  </Scene>
 )
 
 // export default (props) => (
