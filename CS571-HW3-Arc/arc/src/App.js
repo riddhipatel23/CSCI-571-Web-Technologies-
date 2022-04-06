@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import * as ReactDOM from 'react-dom';
+import { Scene,WebMap,WebScene } from '@esri/react-arcgis';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+  ReactDOM.render(
+    <div style={{ width: '100vw', height: '100vh' }}>
+        <WebMap id="c3a272c7050f4429b7d1421d65c39b75" />
+    </div>,
+  document.getElementById('root')
+);
 }
 
 export default App;
