@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ffaangk/arc/static/css/main.e6c13ad2.css",
+    "main.js": "/ffaangk/arc/static/js/main.b7339dc2.js",
+    "static/js/787.e8f4b209.chunk.js": "/ffaangk/arc/static/js/787.e8f4b209.chunk.js",
+    "index.html": "/ffaangk/arc/index.html",
+    "main.e6c13ad2.css.map": "/ffaangk/arc/static/css/main.e6c13ad2.css.map",
+    "main.b7339dc2.js.map": "/ffaangk/arc/static/js/main.b7339dc2.js.map",
+    "787.e8f4b209.chunk.js.map": "/ffaangk/arc/static/js/787.e8f4b209.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b7339dc2.js"
+  ]
+}
