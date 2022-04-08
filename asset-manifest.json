@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/famazonk/static/css/main.e6c13ad2.css",
+    "main.js": "/famazonk/static/js/main.2b8fe9b0.js",
+    "static/js/787.e8f4b209.chunk.js": "/famazonk/static/js/787.e8f4b209.chunk.js",
+    "index.html": "/famazonk/index.html",
+    "main.e6c13ad2.css.map": "/famazonk/static/css/main.e6c13ad2.css.map",
+    "main.2b8fe9b0.js.map": "/famazonk/static/js/main.2b8fe9b0.js.map",
+    "787.e8f4b209.chunk.js.map": "/famazonk/static/js/787.e8f4b209.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2b8fe9b0.js"
+  ]
+}
